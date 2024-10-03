@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Russo+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Russo+One:regular);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tj-ff-body: "Sora", sans-serif;
+  --tj-ff-heading: "Sora", sans-serif;
+  --tj-ff-russo: "Russo One", sans-serif;
+  --tj-ff-fontawesome: "Font Awesome 6 Pro";
+  --tj-body: #dddddd;
+  --tj-white: #ffffff;
+  --tj-off-white: #f6f3fc;
+  --tj-black: #000000;
+  --tj-black-2: #050709;
+  --tj-heading-primary: #102039;
+  --tj-heading-secondary: #ea1826;
+  --tj-theme-primary: #8750f7;
+  --tj-theme-secondary: #2a1454;
+  --tj-theme-accent-1: #0f0715;
+  --tj-theme-accent-2: #140c1c;
+  --tj-grey-1: #747779;
+  --tj-grey-2: #d9d9d9;
+  --tj-grey-3: #dddddd;
+  --tj-grey-4: #22272c;
+  --tj-fw-normal: normal;
+  --tj-fw-elight: 200;
+  --tj-fw-light: 300;
+  --tj-fw-regular: 400;
+  --tj-fw-medium: 500;
+  --tj-fw-sbold: 600;
+  --tj-fw-bold: 700;
+  --tj-fw-ebold: 800;
+  --tj-fw-black: 900;
+  --tj-fz-body: 16px;
+  --tj-fz-btn: 15px;
+  --tj-fz-p: 18px;
+  --tj-fz-h1: 65px;
+  --tj-fz-h2: 45px;
+  --tj-fz-h3: 30px;
+  --tj-fz-h4: 24px;
+  --tj-fz-h5: 22px;
+  --tj-fz-h6: 18px;
+  --tj-fz-sub-title: 36px;
+}
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1ab55;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+body {
+  font-family: var(--tj-ff-body);
+  font-size: var(--tj-fz-body);
+  font-weight: var(--tj-fw-regular);
+  color: var(--tj-body);
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--tj-ff-heading);
+  font-weight: var(--tj-fw-bold);
+  line-height: 1.2;
+  color: var(--tj-white);
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: var(--tj-fz-h1);
+}
+
+h2 {
+  font-size: var(--tj-fz-h2);
+}
+
+h3 {
+  font-size: var(--tj-fz-h3);
+}
+
+h4 {
+  font-size: var(--tj-fz-h4);
+}
+
+h5 {
+  font-size: var(--tj-fz-h5);
+}
+
+h6 {
+  font-size: var(--tj-fz-h6);
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a h1:hover,
+a h2:hover,
+a h3:hover,
+a h4:hover,
+a h5:hover,
+a h6:hover {
+  text-decoration: none;
+}
+
+
+/*   START: Preloader */
+body.loaded {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+.preloader {
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: transparent;
+  z-index: 99999999999999;
+}
+
+.preloader svg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 110vh;
+  fill: var(--tj-black-2);
+}
+
+.preloader .preloader-heading .load-text {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  z-index: 20;
+}
+
+.load-text span {
+  -webkit-animation: loading 1s infinite alternate;
+  animation: loading 1s infinite alternate;
+}
+
+.load-text span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.load-text span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.load-text span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.load-text span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.load-text span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.load-text span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.load-text span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* END: Preloader */
+

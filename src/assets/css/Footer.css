@@ -1,0 +1,124 @@
+.footer{
+    width: 100%;
+    bottom: 0;
+    background: #000;
+    z-index: 1000;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "DM Sans", system-ui;;
+   
+}
+.hr-line{
+    margin-top: 40px;
+}
+.footer-col{
+    flex-basis: unset;
+    padding: 10px;
+    
+}
+.footer-col h3{
+    font-family: "Forum", serif;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.logo-foot{
+    width: 200px;
+    margin-bottom: 20px;
+}
+.share-head{
+    font-family: "Forum", serif;
+    color: #d1ab55;
+    font-size: 19px;
+}
+.col h3{
+    width:fit-content;
+    margin-bottom: 40px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: "DM Sans", system-ui;
+    color: #d1ab55;
+}
+.social-icons{
+    width: 40px;
+    padding-right: 10px;
+}
+.working-days{
+    font-size: 12px;
+    font-family: "DM Sans", system-ui;
+    color: #d1ab55;
+}
+.working-days li{
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+a.a-social img {
+    width: 40px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+a.a-social {
+    display: inline;
+    vertical-align: middle;
+}
+.cont-det {
+    display: inline;
+    vertical-align: middle;
+    font-size: 12px;
+    font-family: "DM Sans", system-ui;
+    color: #d1ab55;
+}
+hr.hr-line {
+    border-color: #d1ab55;
+}
+.foot-copyright {
+    padding: 20px 0 0 0;
+    font-size: 11px;
+    font-family: "DM Sans", system-ui;
+    color: #ffffff;
+    margin: 0 !important;
+}
+.para-left {
+    font-size: 12px;
+    font-family: "DM Sans", system-ui;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: normal;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 678px) {
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .row .col{width: 100% !important;}
+    .col {
+        flex-basis: unset;
+    }
+    .footer-col{
+        
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,67 @@
+
+
+
+
+
+
+  /* Contact Banner Section */
+.serviceImage {
+  background: url('../Image/j1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Centers the content vertically and horizontally */
+  width: 100%; /* Make the image responsive */
+}
+
+.textcontain {
+  background-color: rgba(255, 255, 255, 61%); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+ /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  padding: 20px 40px;
+  width: 400px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  color: #fff; /* Text color */
+  text-align: center;
+  max-width: 90%; /* Adjust to keep it responsive */
+}
+
+.textcontain h1 {
+  font-family: "Playball", cursive;
+  font-size: 2.5em; /* Responsive font size */
+  margin: 0;
+  font-weight: normal;
+  color: #99652a; /* Black text for contrast */
+}
+
+@media (max-width: 768px) {
+  .textcontain h1 {
+    font-size: 2em; /* Smaller font size on smaller screens */
+  }
+
+  .serviceImage {
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+  
+
+  .xcard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+  
+
+  }

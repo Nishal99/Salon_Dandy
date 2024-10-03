@@ -1,0 +1,385 @@
+.about{
+  position: relative;
+  padding: 0px;
+  background-color: #000000;
+}
+
+
+.about-welcome {
+  background: url(/src/assets/Image/j4.jpg) no-repeat center center / cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.about-contain {
+  position: relative;
+  background-color: rgba(255, 255, 255, 61%); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+ /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  padding: 20px 40px;
+  width: auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  color: #fff; /* Text color */
+  text-align: center;
+  max-width: 90%; /* Adjust to keep it responsive */
+}
+
+.about-contain h1 {
+  font-family: "Playball", cursive;
+  font-size: 2.5em; /* Responsive font size */
+  margin: 0;
+  font-weight: normal;
+  color: #99652a; /* Black text for contrast */
+}
+
+@media (max-width: 768px) {
+  .about-contain h1 {
+    font-size: 2em; /* Smaller font size on smaller screens */
+  }
+
+  .about-welcome {
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+}
+
+.about-experience{
+  font-family:"Forum", serif;
+  color: #d1ab55;
+  font-size: 25px;
+ padding: 50px 20px 0 ;
+  background-color: black;
+  margin: 0;
+  
+}
+
+.about-btn{
+  position: absolute;
+  top: 300px;
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+  color: #d1ab55;
+  background-color: transparent;
+  border-left-style: none;
+ 
+  
+}
+
+.vision-mission{
+  position: absolute;
+  top: 200px;
+  margin:25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+  .vision,
+  .mission {
+    width: 50%;
+    height: auto;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.004), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1.5px solid #99652A;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    font-family: var(--fontFamily-dm_sans);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slide up animation */
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  }
+  
+  .vision.visible,
+  .mission.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateY(0); /* Slide into place */
+  }
+  
+  h2 {
+    color: #99652A;
+    font-family: "Forum", serif;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h2{
+      color: #99652A;
+      font-family: "Forum", serif;
+  }
+}
+p.p-para{
+  color: #ffffff;
+          font-family: "DM Sans", serif;
+          font-weight: normal;
+          font-size: 16px;
+          text-align: left;
+}
+
+
+.aboutSandya, .aboutPriyantha{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 20px;
+    background-color:  rgb(0, 0, 0);
+    color: var(--gold-crayola);
+    border: 1px solid gold;
+    border-radius: 50px;
+    margin: 20px;
+
+    .sandayImage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    img{
+      height: 400px;
+
+      
+    
+    }
+    .sandya-info{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: justify;
+      letter-spacing: var( --letterSpacing-5);
+      
+
+      h1{
+        color: #ffffff;
+        margin: 20px 20px 20px;
+        font-family: "Forum", serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: left;
+      }
+      p{
+        color: #d1ab55;
+        margin: 0 20px 20px;
+        font-family: "DM Sans", serif;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: left;
+      }
+    }
+}
+.aboutPriyantha{direction: rtl;}
+span.bold-high{
+  color: #ffffff;
+}
+
+.companyStory{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: var(--gold-crayola);
+  border: 1px solid gold;
+  border-radius: 50px;
+  margin: 20px 20px 0;
+  
+
+  .story-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  
+    img{
+     width: 80%;
+    
+     
+
+    }
+  }
+  .storyText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+    letter-spacing: var( --letterSpacing-5);
+
+    h1{
+      color: #ffffff;
+          margin: 0 20px 20px;
+          font-family: "Forum", serif;
+          font-weight: bold;
+          font-size: 25px;
+      
+    }
+    p{
+      color: #d1ab55;
+      margin: 0 20px 20px;
+      font-family: "DM Sans", serif;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: left;
+    }
+    img{
+      border-radius: 20px;
+    }
+  }
+}
+
+.playball-regular {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--gold-crayola);
+  margin: 20px;
+}
+@media (max-width: 1180px) and (min-width: 768px) {
+  .aboutSandya, .aboutPriyantha {
+    img {
+        height: 300px;
+    }
+}
+}
+/* General mobile styles */
+@media (max-width: 768px) {
+
+  /* Adjusting the .about-welcome section */
+  .about-welcome {
+    flex-direction: column;
+    height: 90vh;
+    position: relative;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;/* Allow the height to adjust based on content */
+  }
+
+  
+
+  /* Vision and Mission responsive adjustments */
+  .vision-mission {
+    flex-direction: column;
+    .vision, .mission {
+      width: 90%; /* Reduce width to fit on smaller screens */
+      height: auto;
+      margin: 10px 0;
+    }
+    h2 {
+      font-size: 22px;
+    }
+  }
+
+  /* Adjust the aboutSandya section */
+  .aboutSandya{
+    flex-direction: column;
+    padding: 20px;
+    .sandya-info {
+      width: 100%;
+      h1 {
+        font-size: 20px;
+        padding-top:20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    img {
+      height: 40vh;
+    }
+  }
+
+  .aboutPriyantha{
+    flex-direction: column;
+    padding: 20px;
+    direction: ltr;
+    
+    .sandya-info {
+      width: 100%;
+      h1 {
+        font-size: 20px;
+        padding-top:20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    img {
+      height: 40vh;
+    }
+  }
+  
+  /* Adjust company story section */
+  .companyStory {
+    flex-direction: column;
+    .story-image {
+      width: 100%;
+    }
+    .storyText {
+      width: 100%;
+      h1 {
+        font-size: 20px;
+        padding-top: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* Button adjustments */
+  .about-btn {
+    top: 150px;
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 800px) {
+  /* Desktop styles */
+  .about-welcome {
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;/* Allow the height to adjust based on content */
+  }
+
+ }
+
+ @media (max-width: 576px) {
+  .about-welcome{
+    padding: 200px 0;
+    height: auto;
+    justify-content: center;
+  }
+  .about-contain{
+    margin-top: 200px;
+  }
+ }
